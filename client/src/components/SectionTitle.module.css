@@ -1,0 +1,70 @@
+.wrap {
+  max-width: 720px;
+  margin-bottom: clamp(2.2rem, 4vw, 3.3rem);
+}
+
+.center {
+  margin-inline: auto;
+  text-align: center;
+}
+
+.left {
+  text-align: left;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: var(--teal-700);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.line {
+  width: 24px;
+  height: 1.5px;
+  background: var(--gold-500);
+}
+
+.title {
+  margin-top: 0.8rem;
+  font-size: clamp(1.95rem, 4.1vw, 3.05rem);
+  line-height: 1.14;
+}
+
+.description {
+  max-width: 630px;
+  margin-top: 1rem;
+  font-size: 0.94rem;
+  line-height: 1.8;
+}
+
+.center .description {
+  margin-inline: auto;
+}
+
+.dark .eyebrow {
+  color: var(--teal-300);
+}
+
+.dark .title {
+  color: #fff;
+}
+
+.dark .description {
+  color: rgba(255, 255, 255, 0.62);
+}
+
+@media (max-width: 640px) {
+  .wrap {
+    margin-bottom: 2rem;
+  }
+
+  .description {
+    font-size: 0.9rem;
+  }
+}

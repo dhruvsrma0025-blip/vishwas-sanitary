@@ -1,0 +1,122 @@
+{
+  "note": "API gallery data. The website uses the same categories and titles from client/src/data/siteData.js with locally optimised images. Placeholder photos are from Unsplash.",
+  "categories": [
+    { "id": "all", "label": "All" },
+    { "id": "sanitary", "label": "Sanitary" },
+    { "id": "fancy", "label": "Fancy Items" }
+  ],
+  "items": [
+    {
+      "id": "taps-mixers",
+      "title": "Taps & Mixers",
+      "category": "sanitary",
+      "alt": "Placeholder photo of chrome tap and shower fittings",
+      "image": "https://images.unsplash.com/photo-1585704032915-c3400ca199e7?auto=format&fit=crop&w=1400&q=80"
+    },
+    {
+      "id": "shower-bath",
+      "title": "Showers & Bath Fittings",
+      "category": "sanitary",
+      "alt": "Placeholder photo of a glass shower enclosure in a bright bathroom",
+      "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1400&q=80"
+    },
+    {
+      "id": "wash-basins",
+      "title": "Wash Basins & Vanities",
+      "category": "sanitary",
+      "alt": "Placeholder photo of a marble double vanity with round mirrors",
+      "image": "https://images.unsplash.com/photo-1564540583246-934409427776?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "id": "freestanding-bathtub",
+      "title": "Freestanding Bathtubs",
+      "category": "sanitary",
+      "alt": "Placeholder photo of a freestanding bathtub in a bright bathroom",
+      "image": "https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=1400&q=80"
+    },
+    {
+      "id": "modern-bathroom",
+      "title": "Complete Bathroom Ideas",
+      "category": "sanitary",
+      "alt": "Placeholder photo of a modern bathroom with a round mirror and dark vanity",
+      "image": "https://images.unsplash.com/photo-1604709177225-055f99402ea3?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "id": "basin-mirror-set",
+      "title": "Basin & Mirror Sets",
+      "category": "sanitary",
+      "alt": "Placeholder photo of a double basin with a large mirror and shower",
+      "image": "https://images.unsplash.com/photo-1629079447777-1e605162dc8d?auto=format&fit=crop&w=1400&q=80"
+    },
+    {
+      "id": "bath-accessories",
+      "title": "Bathroom Accessories",
+      "category": "sanitary",
+      "alt": "Placeholder photo of a bathtub with a plant and tiled wall",
+      "image": "https://images.unsplash.com/photo-1507652313519-d4e9174996dd?auto=format&fit=crop&w=1400&q=80"
+    },
+    {
+      "id": "contemporary-bathroom",
+      "title": "Contemporary Bathroom",
+      "category": "sanitary",
+      "alt": "Placeholder photo of a contemporary grey bathroom with a freestanding tub",
+      "image": "https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&fit=crop&w=1400&q=80"
+    },
+    {
+      "id": "living-room-decor",
+      "title": "Living Room Fancy Items",
+      "category": "fancy",
+      "alt": "Placeholder photo of a warm living room with decorative accents",
+      "image": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1400&q=80"
+    },
+    {
+      "id": "bedroom-styling",
+      "title": "Decorative Bedroom Styling",
+      "category": "fancy",
+      "alt": "Placeholder photo of a softly decorated bedroom with a woven screen",
+      "image": "https://images.unsplash.com/photo-1583845112203-29329902332e?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "id": "boho-accents",
+      "title": "Wall Décor & Accents",
+      "category": "fancy",
+      "alt": "Placeholder photo of a boho living room with woven wall decor",
+      "image": "https://images.unsplash.com/photo-1631679706909-1844bbd07221?auto=format&fit=crop&w=1400&q=80"
+    },
+    {
+      "id": "statement-sofa",
+      "title": "Statement Furniture Accents",
+      "category": "fancy",
+      "alt": "Placeholder photo of a deep green sofa against a pale wall",
+      "image": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=1600&q=80"
+    },
+    {
+      "id": "gallery-wall",
+      "title": "Gallery Wall Ideas",
+      "category": "fancy",
+      "alt": "Placeholder photo of a living room with a gallery wall of framed art",
+      "image": "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1400&q=80"
+    },
+    {
+      "id": "entryway-decor",
+      "title": "Console & Entryway Décor",
+      "category": "fancy",
+      "alt": "Placeholder photo of a wooden console with plants in a bright room",
+      "image": "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "id": "bedroom-decor",
+      "title": "Bedroom Décor Inspiration",
+      "category": "fancy",
+      "alt": "Placeholder photo of a green bedroom with plants and woven pendant lights",
+      "image": "https://images.unsplash.com/photo-1615874959474-d609969a20ed?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "id": "cosy-living",
+      "title": "Cosy Home Styling",
+      "category": "fancy",
+      "alt": "Placeholder photo of a cosy living room with warm decorative lighting",
+      "image": "https://images.unsplash.com/photo-1615529182904-14819c35db37?auto=format&fit=crop&w=1400&q=80"
+    }
+  ]
+}

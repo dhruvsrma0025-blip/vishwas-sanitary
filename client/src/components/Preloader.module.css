@@ -1,0 +1,126 @@
+.screen {
+  position: fixed;
+  inset: 0;
+  z-index: var(--z-preloader);
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 18% 22%, rgba(20, 184, 166, 0.2), transparent 32%),
+    radial-gradient(circle at 82% 78%, rgba(207, 169, 88, 0.12), transparent 30%),
+    linear-gradient(145deg, #072f4b 0%, #041e30 70%);
+  color: #fff;
+}
+
+.center {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-inline: 1.5rem;
+  text-align: center;
+}
+
+.markWrap {
+  margin-bottom: 1rem;
+  border-radius: 18px;
+  box-shadow: 0 18px 48px rgba(0, 0, 0, 0.28);
+}
+
+.wordmark {
+  color: #fff;
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 7vw, 2.9rem);
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+}
+
+.sub {
+  margin-top: 0.4rem;
+  color: rgba(255, 255, 255, 0.62);
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.23em;
+  text-transform: uppercase;
+}
+
+.greeting {
+  margin-top: 0.8rem;
+  color: var(--teal-300);
+  font-family: var(--font-hindi);
+  font-size: 0.9rem;
+}
+
+.track {
+  width: min(190px, 55vw);
+  height: 2px;
+  margin-top: 1.65rem;
+  overflow: hidden;
+  border-radius: 99px;
+  background: rgba(255, 255, 255, 0.14);
+}
+
+.track span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, var(--teal-500), var(--gold-500));
+  transform-origin: left;
+}
+
+.location {
+  position: absolute;
+  bottom: 2rem;
+  z-index: 2;
+  color: rgba(255, 255, 255, 0.45);
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.bubbleOne,
+.bubbleTwo,
+.bubbleThree {
+  position: absolute;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 50%;
+}
+
+.bubbleOne {
+  top: 12%;
+  left: 8%;
+  width: 150px;
+  height: 150px;
+  background: rgba(20, 184, 166, 0.04);
+}
+
+.bubbleTwo {
+  right: 10%;
+  bottom: 15%;
+  width: 220px;
+  height: 220px;
+  background: rgba(207, 169, 88, 0.04);
+}
+
+.bubbleThree {
+  top: 30%;
+  right: 22%;
+  width: 38px;
+  height: 38px;
+  background: rgba(94, 234, 212, 0.08);
+}
+
+@media (max-width: 560px) {
+  .bubbleOne {
+    width: 100px;
+    height: 100px;
+  }
+
+  .bubbleTwo {
+    width: 140px;
+    height: 140px;
+  }
+}

@@ -1,0 +1,157 @@
+.stack {
+  position: fixed;
+  left: max(1rem, env(safe-area-inset-left));
+  bottom: calc(1rem + env(safe-area-inset-bottom));
+  z-index: var(--z-float);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.7rem;
+  pointer-events: none;
+}
+
+.stack > * {
+  pointer-events: auto;
+  flex: 0 0 auto;
+}
+
+.float {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 1.3rem;
+  box-shadow: 0 12px 30px rgba(4, 30, 48, 0.25);
+  transition:
+    transform 0.25s var(--ease-out),
+    box-shadow 0.25s ease;
+}
+
+.float:hover {
+  transform: translateY(-3px) scale(1.03);
+}
+
+.call {
+  background: linear-gradient(145deg, var(--teal-600), var(--navy-800));
+  box-shadow: 0 12px 30px rgba(10, 146, 146, 0.32);
+}
+
+.whatsapp {
+  background: #0f7f45;
+  box-shadow: 0 12px 30px rgba(15, 127, 69, 0.3);
+}
+
+.instagram {
+  background: linear-gradient(135deg, #f9ce34 0%, #ee2a7b 52%, #6228d7 100%);
+  box-shadow: 0 12px 30px rgba(238, 42, 123, 0.3);
+}
+
+.facebook {
+  background: #1877f2;
+  box-shadow: 0 12px 30px rgba(24, 119, 242, 0.3);
+}
+
+.call::before,
+.whatsapp::before {
+  position: absolute;
+  inset: -4px;
+  border: 2px solid rgba(20, 184, 166, 0.5);
+  border-radius: 50%;
+  content: '';
+  opacity: 0;
+  animation: ring 3s ease-out infinite;
+}
+
+.whatsapp::before {
+  border-color: rgba(37, 211, 102, 0.5);
+  animation-delay: 1.1s;
+}
+
+.tooltip {
+  position: absolute;
+  top: 50%;
+  left: calc(100% + 12px);
+  padding: 0.42rem 0.7rem;
+  border-radius: 8px;
+  background: var(--navy-950);
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 500;
+  line-height: 1.4;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-6px, -50%);
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
+}
+
+.float:hover .tooltip,
+.float:focus-visible .tooltip {
+  opacity: 1;
+  transform: translate(0, -50%);
+}
+
+@keyframes ring {
+  0% {
+    opacity: 0.7;
+    transform: scale(0.9);
+  }
+  70%,
+  100% {
+    opacity: 0;
+    transform: scale(1.5);
+  }
+}
+
+@media (max-width: 1399px) {
+  .stack {
+    left: max(0.7rem, env(safe-area-inset-left));
+    bottom: calc(0.7rem + env(safe-area-inset-bottom));
+    gap: 0.55rem;
+  }
+
+  .float {
+    width: 46px;
+    height: 46px;
+    font-size: 1.05rem;
+    box-shadow: 0 8px 20px rgba(4, 30, 48, 0.22);
+  }
+
+  .stack > button {
+    width: 46px;
+    height: 46px;
+    font-size: 0.9rem;
+    box-shadow: 0 8px 20px rgba(4, 30, 48, 0.2);
+  }
+
+  .tooltip {
+    display: none;
+  }
+}
+
+@media (max-width: 560px) {
+  .stack {
+    left: max(0.6rem, env(safe-area-inset-left));
+    bottom: calc(0.6rem + env(safe-area-inset-bottom));
+    gap: 0.48rem;
+  }
+
+  .social {
+    display: none;
+  }
+}
+
+/* Contact page already has prominent call/WhatsApp actions. */
+.stack.solo {
+  padding: 0;
+  border: 0;
+  background: none;
+  box-shadow: none;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}

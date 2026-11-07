@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Vishwas Sanitary and Fancy Items">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a3a5c"/>
+      <stop offset="1" stop-color="#062b45"/>
+    </linearGradient>
+    <linearGradient id="drop" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#59e1d5"/>
+      <stop offset="1" stop-color="#10a6a6"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="url(#bg)"/>
+  <path d="M32 12c0 0 13 14.2 13 23a13 13 0 0 1-26 0c0-8.8 13-23 13-23z" fill="url(#drop)"/>
+  <path d="M25 35a7 7 0 0 0 7 7" fill="none" stroke="#eafcfa" stroke-width="2.6" stroke-linecap="round" opacity=".75"/>
+  <circle cx="44.5" cy="19.5" r="3.2" fill="#d8b45c"/>
+</svg>

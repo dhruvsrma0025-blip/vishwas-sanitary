@@ -1,0 +1,58 @@
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+  min-width: 0;
+  border-radius: 12px;
+}
+
+.mark {
+  flex: 0 0 auto;
+  border-radius: 13px;
+  box-shadow: 0 8px 20px rgba(4, 30, 48, 0.2);
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.08rem;
+  min-width: 0;
+}
+
+.wordmark {
+  color: var(--navy-900);
+  font-family: var(--font-display);
+  font-size: 1.42rem;
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+}
+
+.sub {
+  color: var(--muted);
+  font-size: 0.56rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  line-height: 1.35;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.inverted .wordmark {
+  color: #fff;
+}
+
+.inverted .sub {
+  color: rgba(255, 255, 255, 0.62);
+}
+
+@media (max-width: 380px) {
+  .wordmark {
+    font-size: 1.25rem;
+  }
+
+  .sub {
+    font-size: 0.5rem;
+    letter-spacing: 0.11em;
+  }
+}

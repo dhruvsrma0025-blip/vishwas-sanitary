@@ -1,0 +1,258 @@
+.wrap {
+  position: relative;
+}
+
+.card {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.65fr);
+  gap: clamp(2rem, 5vw, 4.5rem);
+  overflow: hidden;
+  padding: clamp(1.8rem, 4.5vw, 3.5rem);
+  border-radius: var(--radius-xl);
+  background:
+    radial-gradient(circle at 82% 12%, rgba(20, 184, 166, 0.2), transparent 30%),
+    linear-gradient(125deg, #062b45 0%, #083a58 55%, #07505c 100%);
+  box-shadow: var(--shadow-lg);
+  color: #fff;
+}
+
+.orbOne {
+  position: absolute;
+  top: -160px;
+  right: 30%;
+  width: 360px;
+  height: 360px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 50%;
+}
+
+.orbTwo {
+  position: absolute;
+  bottom: -140px;
+  left: -80px;
+  width: 280px;
+  height: 280px;
+  border: 1px solid rgba(207, 169, 88, 0.16);
+  border-radius: 50%;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  color: var(--teal-300);
+  font-size: 0.66rem;
+  font-weight: 600;
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+}
+
+.eyebrow span {
+  width: 22px;
+  height: 1.5px;
+  background: var(--gold-500);
+}
+
+.content h2 {
+  max-width: 520px;
+  margin-top: 0.7rem;
+  color: #fff;
+  font-size: clamp(1.85rem, 4vw, 2.9rem);
+  line-height: 1.12;
+}
+
+.content > p {
+  max-width: 520px;
+  margin-top: 0.85rem;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.9rem;
+}
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem 2rem;
+  margin-top: 1.8rem;
+}
+
+.metaItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  max-width: 300px;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 0.78rem;
+  line-height: 1.65;
+}
+
+a.metaItem:hover {
+  color: #fff;
+}
+
+.metaIcon {
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+  width: 33px;
+  height: 33px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 9px;
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--teal-300);
+  font-size: 0.78rem;
+}
+
+.metaItem small {
+  display: block;
+  margin-bottom: 0.1rem;
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 0.6rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.panel {
+  position: relative;
+  z-index: 1;
+  align-self: center;
+  padding: 1.25rem;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: var(--radius-lg);
+  background: rgba(255, 255, 255, 0.055);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.panelLabel {
+  display: block;
+  margin-bottom: 0.75rem;
+  color: rgba(255, 255, 255, 0.42);
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.phoneButton {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0.65rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 13px;
+  background: rgba(255, 255, 255, 0.05);
+  transition:
+    background-color 0.22s ease,
+    border-color 0.22s ease,
+    transform 0.25s var(--ease-out);
+}
+
+.phoneButton + .phoneButton {
+  margin-top: 0.55rem;
+}
+
+.phoneButton:hover {
+  border-color: rgba(207, 169, 88, 0.42);
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateX(2px);
+}
+
+.phoneIcon {
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(20, 184, 166, 0.16);
+  color: var(--teal-300);
+  font-size: 0.82rem;
+}
+
+.phoneText {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.phoneText small {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 0.58rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.phoneText strong {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
+.phoneArrow {
+  width: 0.7rem;
+  margin-left: auto;
+  color: rgba(255, 255, 255, 0.35);
+}
+
+.whatsapp {
+  margin-top: 0.9rem;
+  min-height: 44px;
+  font-size: 0.82rem;
+}
+
+.directions {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  width: 100%;
+  margin-top: 0.75rem;
+  color: var(--gold-300);
+  font-size: 0.76rem;
+  font-weight: 500;
+  transition: gap 0.25s var(--ease-out);
+}
+
+.directions:hover {
+  gap: 0.6rem;
+}
+
+.directions svg {
+  width: 0.68rem;
+  transform: rotate(-45deg);
+}
+
+@media (max-width: 960px) {
+  .card {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .panel {
+    width: 100%;
+  }
+}
+
+@media (max-width: 560px) {
+  .card {
+    padding: 1.4rem;
+    border-radius: 22px;
+  }
+
+  .meta {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .panel {
+    padding: 1rem;
+  }
+}

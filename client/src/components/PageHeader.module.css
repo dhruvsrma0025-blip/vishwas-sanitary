@@ -1,0 +1,135 @@
+.header {
+  position: relative;
+  overflow: hidden;
+  padding-block: clamp(2.7rem, 6vw, 4.8rem) clamp(3rem, 6vw, 5rem);
+  background:
+    radial-gradient(circle at 80% 20%, rgba(20, 184, 166, 0.18), transparent 34%),
+    linear-gradient(125deg, #062b45 0%, #083a58 52%, #07505c 100%);
+  color: #fff;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  max-width: 840px;
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.6rem;
+  color: rgba(255, 255, 255, 0.45);
+  font-size: 0.72rem;
+  letter-spacing: 0.02em;
+}
+
+.breadcrumb a {
+  transition: color 0.2s ease;
+}
+
+.breadcrumb a:hover {
+  color: var(--gold-300);
+}
+
+.breadcrumb span[aria-current] {
+  color: var(--gold-300);
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.75rem;
+  color: var(--teal-300);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+}
+
+.eyebrow span {
+  width: 24px;
+  height: 1.5px;
+  background: var(--gold-500);
+}
+
+.title {
+  max-width: 900px;
+  color: #fff;
+  font-size: clamp(2.4rem, 5.7vw, 4.25rem);
+  line-height: 1.08;
+}
+
+.description {
+  max-width: 620px;
+  margin-top: 1.15rem;
+  color: rgba(255, 255, 255, 0.66);
+  font-size: clamp(0.92rem, 1.6vw, 1.02rem);
+  line-height: 1.8;
+}
+
+.extra {
+  margin-top: 1.6rem;
+}
+
+.orbOne {
+  position: absolute;
+  top: -140px;
+  right: -80px;
+  width: 420px;
+  height: 420px;
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 50%;
+  background: rgba(20, 184, 166, 0.04);
+}
+
+.orbTwo {
+  position: absolute;
+  right: 18%;
+  bottom: -190px;
+  width: 280px;
+  height: 280px;
+  border: 1px solid rgba(207, 169, 88, 0.18);
+  border-radius: 50%;
+}
+
+.dots {
+  position: absolute;
+  top: 24%;
+  right: 8%;
+  width: 140px;
+  height: 140px;
+  opacity: 0.3;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.5) 1px, transparent 1px);
+  background-size: 14px 14px;
+}
+
+.bottomRule {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--teal-500), var(--gold-500), transparent 80%);
+  opacity: 0.7;
+}
+
+@media (max-width: 640px) {
+  .header {
+    padding-block: 2.4rem 3.1rem;
+  }
+
+  .breadcrumb {
+    margin-bottom: 1.2rem;
+  }
+
+  .dots {
+    display: none;
+  }
+
+  .orbOne {
+    width: 280px;
+    height: 280px;
+  }
+}
